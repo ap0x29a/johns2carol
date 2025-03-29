@@ -1,1 +1,1 @@
-# Criado para ajudar meu parceiro a reatar com sua amada.
+Mostrando pro meu amigo como a bagaça funciona.
