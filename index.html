@@ -29,7 +29,7 @@
             position: absolute;
             font-size: 30px;
             color: red;
-            animation: float 4s linear infinite;
+            animation: float 90s linear infinite;
         }
         @keyframes float {
             0% {
@@ -68,9 +68,9 @@
                 let heart = document.createElement("div");
                 heart.classList.add("heart");
                 heart.innerHTML = "❤️";
-                heart.style.left = Math.random() * 100 + "vw";
-                heart.style.top = Math.random() * 100 + "vh";
-                heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+                heart.style.left = Math.random() * 150 + "vw";
+                heart.style.top = Math.random() * 120 + "vh";
+                heart.style.animationDuration = (Math.random() * 90 + 90) + "s";
                 heartContainer.appendChild(heart);
                 setTimeout(() => heart.remove(), 5000);
             }
