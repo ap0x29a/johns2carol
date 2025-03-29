@@ -60,17 +60,20 @@
     <div id="message" class="hidden">
         <div class="hearts"></div>
         <img id="loveImage" src="https://raw.githubusercontent.com/ap0x29a/johns2carol/refs/heads/main/Captura%20de%20tela%202025-03-29%20111610.png" alt="Imagem Romântica">
-        <h1>Eu te amo. 
-            By: John DS</h1>
+        <h1>Eu te amo.</h1>
+        <h3>By: John DS</h3>   
     </div>
     <script>
         document.getElementById("nameInput").addEventListener("input", function() {
-            if (this.value.trim().toLowerCase() === "carol") {
+            const name = this.value.trim().toLowerCase();
+            if (name === "carol") {
                 document.body.style.backgroundColor = "pink";
                 document.body.style.color = "red";
                 document.getElementById("question").classList.add("hidden");
                 document.getElementById("message").classList.remove("hidden");
                 setInterval(generateHeart, 300);
+            } else if (name !== "") {
+                document.body.innerHTML = '<h1 style="color: red; font-size: 100px;">Sai fora vacilão!!!</h1>';
             }
         });
         function generateHeart() {
