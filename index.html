@@ -56,13 +56,15 @@
     <div id="question">
         <h1>Qual seu nome?</h1>
         <input type="text" id="nameInput" placeholder="Digite aqui">
+        <button id="validateButton">Validar</button>
     </div>
     <div id="message" class="hidden">
         <div class="hearts"></div>
-        <img id="loveImage" src="https://raw.githubusercontent.com/ap0x29a/johns2carol/refs/heads/main/Captura%20de%20tela%202025-03-29%20111610.png" alt="Imagem Romântica">
-        <h1>Eu te amo.</h1>
-        <h3>By: John DS</h3>   
+        <img id="loveImage" src="https://i.imgur.com/your-image-url.jpg" alt="Imagem Romântica">
+        <h1>Eu te amo. By: John DS</h1>
     </div>
+    <div id="validationMessage"></div>
+    
     <script>
         document.getElementById("nameInput").addEventListener("input", function() {
             const name = this.value.trim().toLowerCase();
